@@ -5,7 +5,7 @@ import { Signoff2Page } from '../signoff2/signoff2';
 import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
 // import { Toast } from '@ionic-native/toast';
 // import { DataServiceProvider } from '../../providers/data-service/data-service';
-// import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
+import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
 
 
 
@@ -18,7 +18,7 @@ export class SignoffPage {
 
   data={};
   option:BarcodeScannerOptions;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public barcodeScaner: BarcodeScanner) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public barcodeScaner: BarcodeScanner, private qrScanner: QRScanner) {
    
   }
   
@@ -26,20 +26,36 @@ export class SignoffPage {
     console.log('ionViewDidLoad SignoffPage');
   }
   
-  scan2(){
-    this.option={
-      prompt: "Focus the sensors QR codein the window below to sign off cleaning"
-    }
-    this.barcodeScaner.scan(this.option).then(barcodeData => {
-      console.log(barcodeData);
-      this.data = barcodeData;
-      this.navCtrl.push(Signoff2Page, { data: barcodeData.text });
-     })
+  // scan2(){
+  //   this.option={
+  //     prompt: "Focus the sensors QR codein the window below to sign off cleaning"
+  //   }
+  //   this.barcodeScaner.scan(this.option).then(barcodeData => {
+  //     console.log(barcodeData);
+  //     this.data = barcodeData;
+  //     this.navCtrl.push(Signoff2Page, { data: barcodeData.text });
+  //    })
      
-     .catch(err => {
-         console.log('Error', err);
-     });
-  } 
+  //    .catch(err => {
+  //        console.log('Error', err);
+  //    });
+  // } 
+
+  scan2(){
+        this.qrScanner.prepare()
+        .then((status: QRScannerStatus) => {
+          // start scanning
+          let scanSub = this.barcodeScaner.scan(this.option).then(barcodeData => {
+          
+            console.log(barcodeData);
+             this.data = barcodeData;
+
+            this.qrScanner.hide(); // hide camera preview
+            // scanSub.unsubscribe(); // stop scanning
+          });
+      })
+      .catch((e: any) => console.log('Error is', e));
+  }
 
 
   signoff2(){

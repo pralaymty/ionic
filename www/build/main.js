@@ -55,10 +55,9 @@ var AlertPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-alert',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\alert\alert.html"*/'<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  \n    <h2 class="mtitle">Alerts</h2>\n\n    <ion-col col-12>\n        <ion-item>\n            <ion-label>Select</ion-label>\n            <ion-select [(ngModel)]="toppings">\n              <ion-option>Today</ion-option>\n              <ion-option>This Week</ion-option>\n              <ion-option>Last Week</ion-option>\n            </ion-select>\n          </ion-item>\n    </ion-col>\n    <ion-col col-12>\n            <ion-row class="header">\n              <ion-col col-4>Location</ion-col>\n              <ion-col col-4>Time of Alert</ion-col>\n              <ion-col col-4>Signed Off</ion-col>\n            </ion-row>\n            \n            \n            <ion-row *ngFor="let item of information; let i = index">\n              <ion-col col-4>{{ item.store }} {{ item.department }} </ion-col>\n              <ion-col col-4>{{ item.timeofalert }}</ion-col>\n              <ion-col col-4></ion-col>\n            </ion-row>\n            \n\n            <ion-row class="blk_font">\n              <ion-col col-4>B2 F2 Mens</ion-col>\n              <ion-col col-4>18/10/18 16:30</ion-col>\n              <ion-col col-4>A.Jones 16:45</ion-col>\n            </ion-row>\n\n            <!-- <ion-row>\n              <ion-col col-4>B6 F2 Men</ion-col>\n              <ion-col col-4>14.00</ion-col>\n              <ion-col col-4></ion-col>\n            </ion-row>\n            <ion-row>\n              <ion-col col-4>B6 F3 Female</ion-col>\n              <ion-col col-4>15.00</ion-col>\n              <ion-col col-4></ion-col>\n            </ion-row>\n            <ion-row>\n              <ion-col col-4>B2 F2 Mens</ion-col>\n              <ion-col col-4>16.30</ion-col>\n              <ion-col col-4>A. Jones 16:45</ion-col>\n            </ion-row> -->\n    </ion-col>\n  <ion-grid class="dsah_imag">\n    <ion-col col-12>\n        <button ion-button color="textlight" full (click)=home() large>Home</button>\n        <!-- <button ion-button color="textlight" full (click)="addData()"> show data </button> -->\n    </ion-col>\n  </ion-grid>\n\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\alert\alert.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
     ], AlertPage);
     return AlertPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=alert.js.map
@@ -126,10 +125,9 @@ var Signoff2Page = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-signoff2',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\signoff2\signoff2.html"*/'<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  \n    <h2 class="mtitle" >Sign Off</h2>\n\n    <div class="scan-item" >\n    <ion-card *ngFor="let item of loc">\n      <h3 class="text_center" *ngIf="text == item.qrcode">You are about to sign off cleaning for {{item.store}} {{item.department}} </h3>\n    </ion-card>\n    \n    <!-- <ion-card >\n      <h3 class="text_center">Abcd </h3>\n    </ion-card> -->\n    </div>\n\n    <!-- <h3 class="text_center">You are about to sign off cleaning for {{abc.store}} {{abc.department}} </h3>   -->\n<ion-grid class="dsah_imag">\n  <button ion-button color="secondary" full (click) = dashbd() large>Sign Off cleaning<br/> for this location here</button>\n  <button ion-button color="dark" full (click) = signoff()  large>Cancel and return <br/>to scan QR code</button>\n  <button ion-button color="textlight" full (click) = dashbd()  large>Home</button>\n</ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\signoff2\signoff2.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */]])
     ], Signoff2Page);
     return Signoff2Page;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=signoff2.js.map
@@ -194,10 +192,9 @@ var ReghubPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-reghub',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\reghub\reghub.html"*/'<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  \n    <h2 class="mtitle">Register Hub</h2>\n\n    <ion-col col-12>\n        \n        <h3 class="text_center" >Focus the hub\'s  QR code in the window below</h3>\n        <div class="qrscaner">\n\n        </div>\n<ion-grid class="dsah_imag">  \n  <button ion-button color="secondary" full (click) = scan() large>Capture QR Code</button>\n  <!-- <button ion-button color="primary" full (click) = reghub2() >Test hub2</button> -->\n</ion-grid>\n  </ion-col>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\reghub\reghub.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_barcode_scanner__["a" /* BarcodeScanner */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_barcode_scanner__["a" /* BarcodeScanner */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_barcode_scanner__["a" /* BarcodeScanner */]])
     ], ReghubPage);
     return ReghubPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=reghub.js.map
@@ -212,7 +209,7 @@ var ReghubPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reghub3_reghub3__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_keyboard__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_keyboard__ = __webpack_require__(184);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -252,10 +249,9 @@ var Reghub2Page = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-reghub2',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\reghub2\reghub2.html"*/'<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  \n    <h2 class="mtitle">Register Hub</h2>\n\n    <ion-col col-12>\n        <h3 class="text_center" >Now give a brief description of the hub\'s location</h3>\n\n        <ion-item class="des_box" >\n            <!-- <ion-label>Description</ion-label> -->\n            <ion-input placeholder="Description" [(ngModel)]="des"></ion-input>\n        </ion-item>\n<ion-grid class="dsah_imag">\n  <!-- <button ion-button color="primary" full (click)=newhub() >Register a New Hub</button>\n  <button ion-button color="primary" full (click)=regsensor() >Register Sensor</button> -->\n  <button ion-button color="secondary" full (click)=reghub3() large>Save</button>\n</ion-grid>\n    </ion-col>\n  \n</ion-content>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\reghub2\reghub2.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_keyboard__["a" /* Keyboard */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_keyboard__["a" /* Keyboard */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_keyboard__["a" /* Keyboard */]])
     ], Reghub2Page);
     return Reghub2Page;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=reghub2.js.map
@@ -304,10 +300,9 @@ var Reghub3Page = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-reghub3',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\reghub3\reghub3.html"*/'<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n \n    <h2 class="mtitle">Registered Hub</h2>\n\n    <ion-col col-12>\n        \n      <h3 class="text_center" >Please Confirm Details</h3>\n\n        <ion-item class="des_box" >\n          <h3> {{text}} </h3>\n        </ion-item>\n    <ion-grid class="dsah_imag">\n      <button ion-button color="secondary" full (click)=dashbd() large>Save</button>\n    </ion-grid>\n    </ion-col>\n  \n</ion-content>'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\reghub3\reghub3.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], Reghub3Page);
     return Reghub3Page;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=reghub3.js.map
@@ -372,10 +367,9 @@ var RegsenPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-regsen',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\regsen\regsen.html"*/'<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  \n    <h2 class="mtitle">Register Sensor</h2>\n    <ion-col col-12>\n        <h3 class="text_center" >Focus the sensors QR code in the window below</h3>\n        <div class="qrscaner">\n        </div>\n    <ion-grid class="dsah_imag">\n    <button ion-button color="secondary" full (click) = scan() large>Capture QR Code</button>\n    <!-- <button ion-button color="primary" full (click) = sensor2() >Sensor 2</button> -->\n  </ion-grid>\n  </ion-col>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\regsen\regsen.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_barcode_scanner__["a" /* BarcodeScanner */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_barcode_scanner__["a" /* BarcodeScanner */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_barcode_scanner__["a" /* BarcodeScanner */]])
     ], RegsenPage);
     return RegsenPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=regsen.js.map
@@ -390,7 +384,7 @@ var RegsenPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__regsen3_regsen3__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__ = __webpack_require__(185);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -445,10 +439,9 @@ var Regsen2Page = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-regsen2',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\regsen2\regsen2.html"*/'<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n\n    <h2 class="mtitle">Picture of the Sensor</h2>\n\n    <ion-row align-items-center>\n    <ion-col col-12>\n        <h3 class="text_center" >Now take a picture of the sensor</h3>\n        \n        <!-- <ion-list>\n          <ion-item>\n            <h3>Cancelled: {{sensor.cancelled}}</h3>\n            <h3>Format: {{sensor.format}}</h3>\n            <h3>Text: {{sensor.text}}</h3>\n          </ion-item>\n        </ion-list> -->\n\n        <div class="sensor_photo"> </div>\n        <p class="text_center">Please Include entire entrance and camera in the picture.</p>\n      <ion-grid class="dsah_imag">\n        <!-- <button ion-button color="primary" full (click)=newhub() >Register a New Hub</button>\n        <button ion-button color="primary" full (click)=regsensor() >Register Sensor</button> -->\n        <button ion-button color="secondary" full (click) = estatelist() large>Take Picture</button>\n        <!-- <button ion-button color="primary" full (click) = regsensor() >page 3rd test</button> -->\n      </ion-grid>\n    </ion-col>\n    </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\regsen2\regsen2.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__["a" /* Camera */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__["a" /* Camera */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__["a" /* Camera */]])
     ], Regsen2Page);
     return Regsen2Page;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=regsen2.js.map
@@ -515,10 +508,9 @@ var Regsen3Page = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-regsen3',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\regsen3\regsen3.html"*/'<ion-content padding id="home_page" >\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  \n      <ion-row>\n          <ion-col col-12>\n          <ion-searchbar class="assets_search"></ion-searchbar>\n          <button ion-button color="secondary" class="right" >Expand</button>\n          </ion-col>\n      </ion-row>\n\n      <ion-row>\n        <ion-col col-12>\n                <h6>Location</h6>\n                <ion-list class="accordion-list">\n                        <!-- First Level -->\n                        <ion-list-header *ngFor="let item of information; let i = index" no-lines no-padding>\n                          <!-- Toggle Button -->\n                          <button ion-item (click)="toggleSection(i)" detail-none [ngClass]="{\'section-active\': item.open, \'section\': !item.open}">\n                              {{ item.name }}\n                            <ion-icon item-left name="add" *ngIf="!item.open"></ion-icon>\n                            <ion-icon item-left name="remove" *ngIf="item.open"></ion-icon>\n                          </button>\n                    \n                          <ion-list *ngIf="item.children && item.open" no-lines>\n                            <!-- Second Level -->\n                            <ion-list radio-group >\n\n                            <ion-item *ngFor="let child of item.children">\n                              <ion-label>{{ child.name }} </ion-label>\n                              <ion-radio  value="{{ item.name }} {{ child.name }} "></ion-radio>\n                            </ion-item>\n\n                            </ion-list>\n\n                          </ion-list>\n                          \n                        </ion-list-header>\n                      </ion-list>\n            \n        </ion-col>\n\n    \n      <ion-col col-12>\n      <ion-grid class="dsah_imag">\n        <button ion-button color="secondary" full (click)=regsen4() large>Select</button>\n      </ion-grid>\n      </ion-col>\n    \n    </ion-row>\n \n</ion-content>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\regsen3\regsen3.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
     ], Regsen3Page);
     return Regsen3Page;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=regsen3.js.map
@@ -579,10 +571,9 @@ var Regsen4Page = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-regsen4',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\regsen4\regsen4.html"*/'<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  <h2 class="mtitle">Register Sensor</h2>\n  <ion-grid >\n  <ion-row justify-content-center align-items-center style="height: 100%">\n    <ion-col col-12>\n        <h3 class="text_center" >Confirm your sensor\'s location</h3>\n        <ion-card *ngFor="let item of loc">\n          <div *ngIf="qrtext == item.qrcode" class="sensor_photo">\n            <h6> Serial number: {{item.qrcode}}</h6>\n            <h6>Location name: {{item.store | slice:3:9}} {{item.department}}</h6>\n            <h6>Location ID: {{item.store | slice:3:5}}{{item.store | slice:6:8}}{{item.department | slice:0:1}}</h6>\n          </div>\n        </ion-card>\n    </ion-col>\n    \n      <ion-col col-12 class="text_center" >\n          <ion-grid class="dsah_imag">\n            <button ion-button full color="secondary" (click)=dashbd() large>Save</button>\n            <button ion-button full color="dark" (click)=dashbd() large>Cancel & Back</button>\n          </ion-grid>\n      </ion-col>\n  \n  </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\regsen4\regsen4.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
     ], Regsen4Page);
     return Regsen4Page;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=regsen4.js.map
@@ -648,10 +639,9 @@ var SensorconPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-sensorcon',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\sensorcon\sensorcon.html"*/'<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  <h2 class="mtitle">New Device Settings</h2>\n\n  <ion-col col-12>\n     \n    <ion-card *ngFor="let item of loc">\n        <p *ngIf="text == item.qrcode">\n            Serial Number: {{item.qrcode}}<br/>\n            Location Name: {{item.store | slice:3:9}} {{item.department}}<br/>\n            Location Id: {{item.store | slice:3:5}}{{item.store | slice:6:8}}{{item.department | slice:0:1}}<br/>\n            Last Seen: <br/>\n            Battery Level: {{item.batterylavel}}<br/>\n            dBm: {{item.receivepower}}<br/>\n        </p>\n      </ion-card>\n  <ion-grid class="dsah_imag">\n      <!-- <button ion-button color="primary" full (click)=newhub() >Register a New Hub</button>\n      <button ion-button color="primary" full (click)=regsensor() >Register Sensor</button> -->\n      <button ion-button color="yellow" full (click)=device() large> Save</button>\n      <button ion-button color="dark" full (click)=senloc() large>Cancel And Back</button>\n  </ion-grid>\n  </ion-col>\n</ion-content>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\sensorcon\sensorcon.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */]])
     ], SensorconPage);
     return SensorconPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=sensorcon.js.map
@@ -717,10 +707,9 @@ var HubconPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-hubcon',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\hubcon\hubcon.html"*/'<ion-content padding id="home_page">\n    <img class="header_image" src="../assets/imgs/brand.png"/>\n    <h2 class="mtitle">New Device Settings</h2>\n  \n    <ion-col col-12>\n        <ion-card *ngFor="let item of loc">\n            <p *ngIf="text == item.qrcode">\n                Location Name: {{item.store | slice:3:9}} {{item.department}}<br/>\n                Location Id: {{item.store | slice:3:5}}{{item.store | slice:6:8}}{{item.department | slice:0:1}}<br/>\n                Last Seen: {{item.lastseen}}<br/>\n                Network Type: {{item.networktype}}<br/>\n                dBm: {{item.localnoise}}<br/>\n            </p>\n          </ion-card>\n        <ion-grid class="dsah_imag">\n            <!-- <button ion-button color="primary" full (click)=newhub() >Register a New Hub</button>\n            <button ion-button color="primary" full (click)=regsensor() >Register Sensor</button> -->\n            <button ion-button color="secondary" full (click)=device() large>Save</button>\n            <button ion-button color="dark" full (click)=hubloc() large>Cancel & Back</button>\n        </ion-grid>\n  \n    </ion-col>\n  </ion-content>\n  '/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\hubcon\hubcon.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */]])
     ], HubconPage);
     return HubconPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=hubcon.js.map
@@ -785,10 +774,9 @@ var EstatePage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-estate',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\estate\estate.html"*/'<!--\n  Generated template for the EstatePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content padding id="home_page" >\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  <ion-row>\n      <ion-col col-12>\n      <ion-searchbar class="assets_search"></ion-searchbar>\n      <button ion-button color="textlight" class="right" >Expand</button>\n      </ion-col>\n  </ion-row>\n\n<ion-row>\n    \n\n  <ion-col col-12>\n      <h6>Location</h6>\n      <ion-list class="accordion-list">\n        <!-- First Level -->\n        <ion-list-header *ngFor="let item of information; let i = index" no-lines no-padding>\n          <!-- Toggle Button -->\n          <button ion-item (click)="toggleSection(i)" detail-none [ngClass]="{\'section-active\': item.open, \'section\': !item.open}">\n              {{ item.name }}\n            <ion-icon item-left name="add" *ngIf="!item.open"></ion-icon>\n            <ion-icon item-left name="remove" *ngIf="item.open"></ion-icon>\n          </button>\n     \n          <ion-list *ngIf="item.children && item.open" no-lines>\n            <!-- Second Level -->\n            <ion-list radio-group >\n\n            <ion-item *ngFor="let child of item.children">\n              <ion-label>{{ child.name }} </ion-label>\n              <ion-radio  value="{{ item.name }} {{ child.name }} "></ion-radio>\n            </ion-item>\n\n            </ion-list>\n\n          </ion-list>\n          \n        </ion-list-header>\n      </ion-list>\n      \n  </ion-col>\n\n\n  <ion-col col-12>\n      <ion-grid class="dsah_imag">\n    <button ion-button color="textlight" full (click)=desbd() large>Home</button>\n    </ion-grid>\n  </ion-col>\n</ion-row>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\estate\estate.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
     ], EstatePage);
     return EstatePage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=estate.js.map
@@ -825,59 +813,59 @@ var map = {
 		18
 	],
 	"../pages/dashbosrd/dashbosrd.module": [
-		328,
+		330,
 		0
 	],
 	"../pages/device/device.module": [
-		330,
+		333,
 		17
 	],
 	"../pages/estate/estate.module": [
-		333,
+		332,
 		16
 	],
 	"../pages/hubcon/hubcon.module": [
-		332,
+		334,
 		15
 	],
 	"../pages/hubdtl/hubdtl.module": [
-		336,
+		335,
 		14
 	],
 	"../pages/hubloc/hubloc.module": [
-		334,
+		336,
 		13
 	],
 	"../pages/reghub/reghub.module": [
-		335,
+		337,
 		10
 	],
 	"../pages/reghub2/reghub2.module": [
-		337,
+		339,
 		12
 	],
 	"../pages/reghub3/reghub3.module": [
-		339,
+		338,
 		11
 	],
 	"../pages/regsen/regsen.module": [
-		338,
+		340,
 		6
 	],
 	"../pages/regsen2/regsen2.module": [
-		341,
+		342,
 		9
 	],
 	"../pages/regsen3/regsen3.module": [
-		340,
+		341,
 		8
 	],
 	"../pages/regsen4/regsen4.module": [
-		342,
+		344,
 		7
 	],
 	"../pages/sensorcon/sensorcon.module": [
-		344,
+		343,
 		5
 	],
 	"../pages/sensordtl/sensordtl.module": [
@@ -885,11 +873,11 @@ var map = {
 		4
 	],
 	"../pages/sensorloc/sensorloc.module": [
-		343,
+		347,
 		3
 	],
 	"../pages/signoff/signoff.module": [
-		347,
+		348,
 		1
 	],
 	"../pages/signoff2/signoff2.module": [
@@ -984,23 +972,22 @@ var DashboardPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-dashboard',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\dashboard\dashboard.html"*/'\n<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  <ion-grid class="dsah_imag">\n      <ion-row>\n        <ion-col col-6><img (click)=alertpg()  src="../assets/imgs/alert.PNG"><p>Alerts</p></ion-col>\n        <ion-col col-6><img (click)=signoffpg() src="../assets/imgs/Timer.PNG"><p>Sign off cleaning</p></ion-col>\n        <ion-col col-6><img (click)=reghubpg() src="../assets/imgs/box.PNG"><p>Register hub</p></ion-col>\n        <ion-col col-6><img (click)=regsensorpg() src="../assets/imgs/Reg_sensor.PNG"><p>Register sensor</p></ion-col>\n        <ion-col col-6><img (click)=devicepg() src="../assets/imgs/services2.PNG"><p>View/edit devices</p></ion-col>\n        <ion-col col-6><img (click)=estatepg() src="../assets/imgs/Estate2.PNG"><p>View estate</p></ion-col>\n      </ion-row>\n      <ion-row>\n          <ion-col col-12>\n            <button ion-button color="dark" full (click)=logout() large>Log Out</button>\n          </ion-col>\n      </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\dashboard\dashboard.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], DashboardPage);
     return DashboardPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=dashboard.js.map
 
 /***/ }),
 
-/***/ 236:
+/***/ 237:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(237);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(258);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1008,19 +995,19 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 257:
+/***/ 258:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_pro__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_pro__ = __webpack_require__(259);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_pro___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__ionic_pro__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(308);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_dashboard_dashboard__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_alert_alert__ = __webpack_require__(118);
@@ -1041,13 +1028,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_hubdtl_hubdtl__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_hubloc_hubloc__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_hubcon_hubcon__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__angular_http__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ionic_native_keyboard__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ionic_native_camera__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_native_barcode_scanner__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__ionic_native_sqlite__ = __webpack_require__(308);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__ionic_native_toast__ = __webpack_require__(309);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__providers_store_store__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_native_qr_scanner__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__angular_http__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ionic_native_keyboard__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_native_camera__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__ionic_native_barcode_scanner__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__ionic_native_sqlite__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__ionic_native_toast__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__providers_store_store__ = __webpack_require__(311);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1081,7 +1069,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-// import { QRScanner } from '@ionic-native/qr-scanner';
+
 // import { Toast } from '@ionic-native/toast';
 // import { DataServiceProvider } from '../providers/data-service/data-service';
 
@@ -1124,28 +1112,28 @@ var AppModule = /** @class */ (function () {
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_27__angular_http__["b" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_28__angular_http__["b" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/dashbosrd/dashbosrd.module#DashbosrdPageModule', name: 'DashbosrdPage', segment: 'dashbosrd', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/alert/alert.module#AlertPageModule', name: 'AlertPage', segment: 'alert', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/device/device.module#DevicePageModule', name: 'DevicePage', segment: 'device', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/dashbosrd/dashbosrd.module#DashbosrdPageModule', name: 'DashbosrdPage', segment: 'dashbosrd', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/dashboard/dashboard.module#DashboardPageModule', name: 'DashboardPage', segment: 'dashboard', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/hubcon/hubcon.module#HubconPageModule', name: 'HubconPage', segment: 'hubcon', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/estate/estate.module#EstatePageModule', name: 'EstatePage', segment: 'estate', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/device/device.module#DevicePageModule', name: 'DevicePage', segment: 'device', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/hubcon/hubcon.module#HubconPageModule', name: 'HubconPage', segment: 'hubcon', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/hubdtl/hubdtl.module#HubdtlPageModule', name: 'HubdtlPage', segment: 'hubdtl', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/hubloc/hubloc.module#HublocPageModule', name: 'HublocPage', segment: 'hubloc', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/reghub/reghub.module#ReghubPageModule', name: 'ReghubPage', segment: 'reghub', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/hubdtl/hubdtl.module#HubdtlPageModule', name: 'HubdtlPage', segment: 'hubdtl', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/reghub3/reghub3.module#Reghub3PageModule', name: 'Reghub3Page', segment: 'reghub3', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/reghub2/reghub2.module#Reghub2PageModule', name: 'Reghub2Page', segment: 'reghub2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/regsen/regsen.module#RegsenPageModule', name: 'RegsenPage', segment: 'regsen', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/reghub3/reghub3.module#Reghub3PageModule', name: 'Reghub3Page', segment: 'reghub3', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/regsen3/regsen3.module#Regsen3PageModule', name: 'Regsen3Page', segment: 'regsen3', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/regsen2/regsen2.module#Regsen2PageModule', name: 'Regsen2Page', segment: 'regsen2', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/regsen4/regsen4.module#Regsen4PageModule', name: 'Regsen4Page', segment: 'regsen4', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/sensorloc/sensorloc.module#SensorlocPageModule', name: 'SensorlocPage', segment: 'sensorloc', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sensorcon/sensorcon.module#SensorconPageModule', name: 'SensorconPage', segment: 'sensorcon', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/regsen4/regsen4.module#Regsen4PageModule', name: 'Regsen4Page', segment: 'regsen4', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sensordtl/sensordtl.module#SensordtlPageModule', name: 'SensordtlPage', segment: 'sensordtl', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signoff2/signoff2.module#Signoff2PageModule', name: 'Signoff2Page', segment: 'signoff2', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/sensorloc/sensorloc.module#SensorlocPageModule', name: 'SensorlocPage', segment: 'sensorloc', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signoff/signoff.module#SignoffPageModule', name: 'SignoffPage', segment: 'signoff', priority: 'low', defaultHistory: [] }
                     ]
                 })
@@ -1175,15 +1163,16 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_30__ionic_native_barcode_scanner__["a" /* BarcodeScanner */],
-                __WEBPACK_IMPORTED_MODULE_28__ionic_native_keyboard__["a" /* Keyboard */],
-                __WEBPACK_IMPORTED_MODULE_29__ionic_native_camera__["a" /* Camera */],
+                __WEBPACK_IMPORTED_MODULE_31__ionic_native_barcode_scanner__["a" /* BarcodeScanner */],
+                __WEBPACK_IMPORTED_MODULE_27__ionic_native_qr_scanner__["a" /* QRScanner */],
+                __WEBPACK_IMPORTED_MODULE_29__ionic_native_keyboard__["a" /* Keyboard */],
+                __WEBPACK_IMPORTED_MODULE_30__ionic_native_camera__["a" /* Camera */],
                 __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["b" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_31__ionic_native_sqlite__["a" /* SQLite */],
-                __WEBPACK_IMPORTED_MODULE_32__ionic_native_toast__["a" /* Toast */],
-                __WEBPACK_IMPORTED_MODULE_33__providers_store_store__["a" /* StoreProvider */]
+                __WEBPACK_IMPORTED_MODULE_32__ionic_native_sqlite__["a" /* SQLite */],
+                __WEBPACK_IMPORTED_MODULE_33__ionic_native_toast__["a" /* Toast */],
+                __WEBPACK_IMPORTED_MODULE_34__providers_store_store__["a" /* StoreProvider */]
             ]
         })
     ], AppModule);
@@ -1194,15 +1183,15 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 307:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(225);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(91);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1231,27 +1220,26 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
 
-/***/ 310:
+/***/ 311:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StoreProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(312);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_pouchdb__ = __webpack_require__(317);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_pouchdb_adapter_cordova_sqlite__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_pouchdb__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_pouchdb_adapter_cordova_sqlite__ = __webpack_require__(322);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_pouchdb_adapter_cordova_sqlite___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_pouchdb_adapter_cordova_sqlite__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1300,10 +1288,9 @@ var StoreProvider = /** @class */ (function () {
     };
     StoreProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
     ], StoreProvider);
     return StoreProvider;
-    var _a;
 }());
 
 //# sourceMappingURL=store.js.map
@@ -1402,10 +1389,9 @@ var DevicePage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-device',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\device\device.html"*/'<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  <h2 class="mtitle">View / Edit Device</h2>\n\n<ion-col col-12>\n    <h3 class="text_center" >Focus the hub or sensors QR code in the window below to edit its location.</h3>\n    <div class="qrscaner">\n    </div>\n    <ion-grid class="dsah_imag">\n      <button ion-button color="secondary" full (click) = scan2() large> Capture QR Code </button>\n    </ion-grid>\n\n      <!-- <div *ngFor="let item of loc">\n        <div *ngIf="text == item.qrcode && item.type == \'sensor\'  ? dsensor() : end" >\n            \n        </div>\n      </div>\n\n      <ion-card *ngFor="let item of loc">\n        <p *ngIf="text == item.qrcode && item.type == \'hub\' ? dhub() : end"> </p>\n      </ion-card> -->\n\n      <!-- <ion-item *ngFor="let item of loc" *ngIf="text == loc.qrcode && loc.type == \'sensor\' ? dsensor() : end"></ion-item> -->\n\n\n        <!-- <ng-template #elsetag>\n          <div>\n            {{item.type}}\n          </div>\n        </ng-template> -->\n      \n     <!-- <h2> {{text.text}}</h2> -->\n\n</ion-col>\n<!-- <ion-col col-12 class="text_center" >\n  <button ion-button full color="secondary" (click) = dsensor() >If Sensor Selected</button>\n  <button ion-button full color="dark" (click) = dhub()>If HUB Selected</button>\n</ion-col> -->\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\device\device.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_barcode_scanner__["a" /* BarcodeScanner */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_barcode_scanner__["a" /* BarcodeScanner */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* Http */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_barcode_scanner__["a" /* BarcodeScanner */], __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* Http */]])
     ], DevicePage);
     return DevicePage;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=device.js.map
@@ -1421,6 +1407,7 @@ var DevicePage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signoff2_signoff2__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_barcode_scanner__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_qr_scanner__ = __webpack_require__(183);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1436,30 +1423,44 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 // import { Toast } from '@ionic-native/toast';
 // import { DataServiceProvider } from '../../providers/data-service/data-service';
-// import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
+
 var SignoffPage = /** @class */ (function () {
-    function SignoffPage(navCtrl, navParams, barcodeScaner) {
+    function SignoffPage(navCtrl, navParams, barcodeScaner, qrScanner) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.barcodeScaner = barcodeScaner;
+        this.qrScanner = qrScanner;
         this.data = {};
     }
     SignoffPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad SignoffPage');
     };
+    // scan2(){
+    //   this.option={
+    //     prompt: "Focus the sensors QR codein the window below to sign off cleaning"
+    //   }
+    //   this.barcodeScaner.scan(this.option).then(barcodeData => {
+    //     console.log(barcodeData);
+    //     this.data = barcodeData;
+    //     this.navCtrl.push(Signoff2Page, { data: barcodeData.text });
+    //    })
+    //    .catch(err => {
+    //        console.log('Error', err);
+    //    });
+    // } 
     SignoffPage.prototype.scan2 = function () {
         var _this = this;
-        this.option = {
-            prompt: "Focus the sensors QR codein the window below to sign off cleaning"
-        };
-        this.barcodeScaner.scan(this.option).then(function (barcodeData) {
-            console.log(barcodeData);
-            _this.data = barcodeData;
-            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__signoff2_signoff2__["a" /* Signoff2Page */], { data: barcodeData.text });
+        this.qrScanner.prepare()
+            .then(function (status) {
+            // start scanning
+            var scanSub = _this.barcodeScaner.scan(_this.option).then(function (barcodeData) {
+                console.log(barcodeData);
+                _this.data = barcodeData;
+                _this.qrScanner.hide(); // hide camera preview
+                // scanSub.unsubscribe(); // stop scanning
+            });
         })
-            .catch(function (err) {
-            console.log('Error', err);
-        });
+            .catch(function (e) { return console.log('Error is', e); });
     };
     SignoffPage.prototype.signoff2 = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__signoff2_signoff2__["a" /* Signoff2Page */]);
@@ -1490,10 +1491,9 @@ var SignoffPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-signoff',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\signoff\signoff.html"*/'<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n \n      <h2 class="mtitle" >Scan QR Code</h2>\n\n      <ion-col col-12>\n          \n          <h3 class="text_center" >If you have finished cleaning this location please scan the sensor\'s QR code in the window below to sign off cleaning</h3>\n\n          <div class="qrscaner" >\n\n          </div> \n\n          <!-- <ion-list>\n            <ion-item>\n              <h3>Cancelled: {{data.cancelled}}</h3>\n              <h3>Format: {{data.format}}</h3>\n              <p>Text: {{data.text}}</p>  \n          </ion-item>\n          </ion-list> -->\n\n\n          <!-- <ion-card *ngIf="productFound">\n              <ion-card-header>\n                <h2>Price: $ {{selectedProduct.price}}</h2>\n              </ion-card-header>\n              <ion-card-content>\n                <ul>\n                  <li>{{selectedProduct.plu}}</li>\n                  <li>{{selectedProduct.name}}</li>\n                  <li>{{selectedProduct.desc}}</li>\n                </ul>\n              </ion-card-content>\n            </ion-card> -->\n      \n\n    <ion-grid class="dsah_imag">\n        <button ion-button color="secondary" full (click) = scan2() large>Capture QR Code</button>\n        <!-- <button ion-button color="primary" full (click) = signoff2()>test sign off 2</button> -->\n    </ion-grid>\n    </ion-col>\n  \n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\signoff\signoff.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_barcode_scanner__["a" /* BarcodeScanner */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_barcode_scanner__["a" /* BarcodeScanner */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_barcode_scanner__["a" /* BarcodeScanner */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_qr_scanner__["a" /* QRScanner */]])
     ], SignoffPage);
     return SignoffPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=signoff.js.map
@@ -1564,10 +1564,9 @@ var SensordtlPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-sensordtl',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\sensordtl\sensordtl.html"*/'<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  <h2 class="mtitle">Sensor Details</h2>\n\n  <ion-col col-12>\n      <p>Below are the current settings for this device</p>\n\n      <!-- <ion-card *ngFor="let item of loc">\n        <h3 class="text_center" *ngIf="text == item.qrcode">You are about to sign off cleaning for {{item.store}} {{item.department}} </h3> \n      </ion-card> -->\n\n      <ion-card *ngFor="let item of loc">\n          <p *ngIf="text == item.qrcode">\n              Serial Number: {{item.qrcode}}<br/>\n              Location Name: {{item.store | slice:3:9}} {{item.department}}<br/>\n              Location Id: {{item.store | slice:3:5}}{{item.store | slice:6:8}}{{item.department | slice:0:1}}<br/>\n              Last Seen: <br/>\n              Battery Level: {{item.batterylavel}}<br/>\n              dBm: {{item.receivepower}}<br/>\n          </p>\n        </ion-card>\n  <ion-grid class="dsah_imag">\n    <button ion-button color="violate" full (click)=senloc() large>Edit Location</button>\n    <button ion-button color="yellow" full (click)=device() large>Scan Another Device</button>\n    <button ion-button color="primary" full (click)=dashbd() large>Home</button>\n  </ion-grid>\n\n  </ion-col>\n</ion-content>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\sensordtl\sensordtl.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* Http */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* Http */]])
     ], SensordtlPage);
     return SensordtlPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=sensordtl.js.map
@@ -1639,10 +1638,9 @@ var SensorlocPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-sensorloc',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\sensorloc\sensorloc.html"*/'<ion-content padding id="home_page" >\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  <ion-row>\n      <ion-col col-12>\n      <ion-searchbar class="assets_search"></ion-searchbar>\n      <button ion-button color="textlight" class="right" >Expand</button>\n      </ion-col>\n  </ion-row>\n\n<ion-row>\n  <ion-col col-12>\n        <h6>Location</h6>\n        <ion-list class="accordion-list">\n          <!-- First Level -->\n          <ion-list-header *ngFor="let item of information; let i = index" no-lines no-padding>\n            <!-- Toggle Button -->\n            <button ion-item (click)="toggleSection(i)" detail-none [ngClass]="{\'section-active\': item.open, \'section\': !item.open}">\n                {{ item.name }}\n              <ion-icon item-left name="add" *ngIf="!item.open"></ion-icon>\n              <ion-icon item-left name="remove" *ngIf="item.open"></ion-icon>\n            </button>\n       \n            <ion-list *ngIf="item.children && item.open" no-lines>\n              <!-- Second Level -->\n              <ion-list radio-group >\n\n              <ion-item *ngFor="let child of item.children">\n                <ion-label>{{ child.name }} </ion-label>\n                <ion-radio  value="{{ item.name }} {{ child.name }} "></ion-radio>\n              </ion-item>\n\n              </ion-list>\n\n            </ion-list>\n            \n          </ion-list-header>\n        </ion-list>\n  </ion-col>\n\n  <!-- <ion-col col-12>\n      <accordion></accordion>\n      \n  </ion-col> -->\n\n\n  <ion-col col-12>\n      <ion-grid class="dsah_imag">\n    <button ion-button color="secondary" full (click)=sencof() large>Select</button>\n    <!-- <button ion-button color="textlight" full (click)=sendtl()>Back</button> -->\n    </ion-grid>\n  </ion-col>\n</ion-row>\n\n</ion-content>'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\sensorloc\sensorloc.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */]])
     ], SensorlocPage);
     return SensorlocPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=sensorloc.js.map
@@ -1713,10 +1711,9 @@ var HubdtlPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-hubdtl',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\hubdtl\hubdtl.html"*/'<ion-content padding id="home_page">\n  <img class="header_image" src="../assets/imgs/brand.png"/>\n  <h2 class="mtitle">Hub Details</h2>\n\n  <ion-col col-12>\n      <p>Below are the current settings for this device</p>\n\n      <ion-card *ngFor="let item of loc">\n        <p *ngIf="text == item.qrcode">\n            Location Name: {{item.store | slice:3:9}} {{item.department}}<br/>\n            Location Id: {{item.store | slice:3:5}}{{item.store | slice:6:8}}{{item.department | slice:0:1}}<br/>\n            Last Seen: {{item.lastseen}}<br/>\n            Network Type: {{item.networktype}}<br/>\n            dBm: {{item.localnoise}}<br/>\n        </p>\n      </ion-card>\n\n      <ion-grid class="dsah_imag">\n        <button ion-button color="violate" full (click)=hubloc() large>Edit Location</button>\n        <button ion-button color="yellow" full (click)=device() large>Scan Another Device</button>\n        <button ion-button color="secondary" full (click)=dashbd() large>Home</button>\n      </ion-grid>\n\n  </ion-col>\n</ion-content>'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\hubdtl\hubdtl.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* Http */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* Http */]])
     ], HubdtlPage);
     return HubdtlPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=hubdtl.js.map
@@ -1788,10 +1785,9 @@ var HublocPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-hubloc',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\hubloc\hubloc.html"*/'<ion-content padding id="home_page" >\n    <img class="header_image" src="../assets/imgs/brand.png"/>\n    <ion-row>\n        <ion-col col-12>\n        <ion-searchbar class="assets_search"></ion-searchbar>\n        <button ion-button color="textlight" class="right" >Expand</button>\n        </ion-col>\n    </ion-row>\n  \n  <ion-row>\n    <ion-col col-12>\n            <h6>Location</h6>\n            <ion-list class="accordion-list">\n              <!-- First Level -->\n              <ion-list-header *ngFor="let item of information; let i = index" no-lines no-padding>\n                <!-- Toggle Button -->\n                <button ion-item (click)="toggleSection(i)" detail-none [ngClass]="{\'section-active\': item.open, \'section\': !item.open}">\n                    {{ item.name }}\n                  <ion-icon item-left name="add" *ngIf="!item.open"></ion-icon>\n                  <ion-icon item-left name="remove" *ngIf="item.open"></ion-icon>\n                </button>\n           \n                <ion-list *ngIf="item.children && item.open" no-lines>\n                  <!-- Second Level -->\n                  <ion-list radio-group >\n\n                  <ion-item *ngFor="let child of item.children">\n                    <ion-label>{{ child.name }} </ion-label>\n                    <ion-radio  value="{{ item.name }} {{ child.name }} "></ion-radio>\n                  </ion-item>\n\n                  </ion-list>\n\n                </ion-list>\n                \n              </ion-list-header>\n            </ion-list>\n    </ion-col>\n  \n    <!-- <ion-col col-12>\n        <accordion></accordion>\n        \n    </ion-col> -->\n  \n  \n    <ion-col col-12>\n        <ion-grid class="dsah_imag">\n            <button ion-button color="secondary" full (click)=hubcof() large>Select</button>\n      <!-- <button ion-button color="textlight" full (click)=hubdtl()>Back</button> -->\n      </ion-grid>\n    </ion-col>\n  </ion-row>\n  \n  </ion-content>\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\hubloc\hubloc.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */]])
     ], HublocPage);
     return HublocPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=hubloc.js.map
@@ -1829,15 +1825,14 @@ var HomePage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-home',template:/*ion-inline-start:"C:\Users\USER\pralay\storetech2\src\pages\home\home.html"*/'\n<ion-content padding id="home_page">\n  <!-- <img class="header_image" src="../assets/imgs/Logo2.PNG"/> -->\n  <h1><img class="logo_text" src="../assets/imgs/brand.png"/></h1>\n  <h6>Flexicount<br/> Powered By StoreTech</h6>\n\n  <h6>Please Sign In</h6>\n\n  <ion-list class="login_area">\n      <ion-row>\n        <ion-col col-12>\n            <ion-item class="ref_input">\n              <ion-label fixed>Username</ion-label>\n              <ion-input type="text" value=""></ion-input>\n            </ion-item>\n        </ion-col>\n      </ion-row>\n      \n      <ion-row>\n          <ion-col col-12>\n            <ion-item class="ref_input">\n              <ion-label fixed>Password</ion-label>\n              <ion-input type="password"></ion-input>\n            </ion-item>\n          </ion-col>\n      </ion-row>\n\n      <ion-row>\n          <ion-col col-6>\n              <ion-item>\n                <ion-label>English</ion-label>\n                <ion-select [(ngModel)]="language">\n                  <ion-option value="Russin">Russian</ion-option>\n                  <ion-option value="Urdu">Urdu</ion-option>\n                  <ion-option value="Hindi">Hindi</ion-option>\n                  <ion-option value="Chinise">Chinise</ion-option>\n                  <ion-option value="Spainish">Spainish</ion-option>\n                  <ion-option value="German">German</ion-option>\n                </ion-select>\n              </ion-item>\n          </ion-col>\n          <ion-col col-6>\n              <ion-item class="ckbx">\n                  <ion-label>Remember Me</ion-label>\n                  <ion-checkbox  checked="true"></ion-checkbox>\n              </ion-item>\n          </ion-col>\n      </ion-row>\n\n      <ion-row>\n          <ion-col col-12>\n            <button ion-button color="textlight" full (click)=login()>Log In</button>\n          </ion-col>\n      </ion-row>\n\n      <!-- <ion-row>\n          <ion-col col-6 class="text left">\n              privacy\n          </ion-col>\n          <ion-col col-6 class="text right">\n              forgot Password?\n          </ion-col>\n      </ion-row> -->\n\n    \n    </ion-list>\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\USER\pralay\storetech2\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], HomePage);
     return HomePage;
-    var _a;
 }());
 
 //# sourceMappingURL=home.js.map
 
 /***/ })
 
-},[236]);
+},[237]);
 //# sourceMappingURL=main.js.map

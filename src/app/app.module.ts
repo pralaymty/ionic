@@ -28,7 +28,7 @@ import { HublocPage } from '../pages/hubloc/hubloc';
 import { HubconPage } from '../pages/hubcon/hubcon';
 
 
-// import { QRScanner } from '@ionic-native/qr-scanner';
+import { QRScanner } from '@ionic-native/qr-scanner';
 
 // import { Toast } from '@ionic-native/toast';
 // import { DataServiceProvider } from '../providers/data-service/data-service';
@@ -99,6 +99,7 @@ Pro.init('34b51387', {
   ],
   providers: [
     BarcodeScanner,
+    QRScanner,
     Keyboard,
     Camera,
     StatusBar,
